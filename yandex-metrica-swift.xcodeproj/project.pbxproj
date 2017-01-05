@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		802430321E1E34F9005AD49D /* JsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802430311E1E34F9005AD49D /* JsonObject.swift */; };
+		802430341E1E6EB6005AD49D /* ConfigMetrica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802430331E1E6EB6005AD49D /* ConfigMetrica.swift */; };
+		8038D1531E1EDA9C00A89D16 /* MetricaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8038D1521E1EDA9C00A89D16 /* MetricaError.swift */; };
+		80923C6C1E1D53F80098C4DF /* YandexMetrica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80923C6B1E1D53F80098C4DF /* YandexMetrica.swift */; };
+		80923C731E1D54220098C4DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80923C721E1D54220098C4DF /* main.swift */; };
+		80C1BA241E1D99B1000D807A /* Metrica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1BA231E1D99B1000D807A /* Metrica.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80923C661E1D53F80098C4DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		802430311E1E34F9005AD49D /* JsonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonObject.swift; sourceTree = "<group>"; };
+		802430331E1E6EB6005AD49D /* ConfigMetrica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigMetrica.swift; sourceTree = "<group>"; };
+		8038D1521E1EDA9C00A89D16 /* MetricaError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricaError.swift; sourceTree = "<group>"; };
+		80923C681E1D53F80098C4DF /* yandex-metrica-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "yandex-metrica-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80923C6B1E1D53F80098C4DF /* YandexMetrica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMetrica.swift; sourceTree = "<group>"; };
+		80923C721E1D54220098C4DF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		80C1BA231E1D99B1000D807A /* Metrica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metrica.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80923C651E1D53F80098C4DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8024302E1E1E2C72005AD49D /* untils */ = {
+			isa = PBXGroup;
+			children = (
+				802430311E1E34F9005AD49D /* JsonObject.swift */,
+				8038D1521E1EDA9C00A89D16 /* MetricaError.swift */,
+			);
+			name = untils;
+			sourceTree = "<group>";
+		};
+		80923C5F1E1D53F80098C4DF = {
+			isa = PBXGroup;
+			children = (
+				80923C6A1E1D53F80098C4DF /* yandex-metrica-swift */,
+				80923C691E1D53F80098C4DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80923C691E1D53F80098C4DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80923C681E1D53F80098C4DF /* yandex-metrica-swift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80923C6A1E1D53F80098C4DF /* yandex-metrica-swift */ = {
+			isa = PBXGroup;
+			children = (
+				8024302E1E1E2C72005AD49D /* untils */,
+				80C1BA221E1D99A2000D807A /* entity */,
+				80923C6B1E1D53F80098C4DF /* YandexMetrica.swift */,
+				80923C721E1D54220098C4DF /* main.swift */,
+				802430331E1E6EB6005AD49D /* ConfigMetrica.swift */,
+			);
+			path = "yandex-metrica-swift";
+			sourceTree = "<group>";
+		};
+		80C1BA221E1D99A2000D807A /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				80C1BA231E1D99B1000D807A /* Metrica.swift */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80923C671E1D53F80098C4DF /* yandex-metrica-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80923C6F1E1D53F80098C4DF /* Build configuration list for PBXNativeTarget "yandex-metrica-swift" */;
+			buildPhases = (
+				80923C641E1D53F80098C4DF /* Sources */,
+				80923C651E1D53F80098C4DF /* Frameworks */,
+				80923C661E1D53F80098C4DF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yandex-metrica-swift";
+			productName = "yandex-metrica-swift";
+			productReference = 80923C681E1D53F80098C4DF /* yandex-metrica-swift */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80923C601E1D53F80098C4DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Aleksey Pleshkov";
+				TargetAttributes = {
+					80923C671E1D53F80098C4DF = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7LSSWAQSWM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 80923C631E1D53F80098C4DF /* Build configuration list for PBXProject "yandex-metrica-swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80923C5F1E1D53F80098C4DF;
+			productRefGroup = 80923C691E1D53F80098C4DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80923C671E1D53F80098C4DF /* yandex-metrica-swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80923C641E1D53F80098C4DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802430321E1E34F9005AD49D /* JsonObject.swift in Sources */,
+				802430341E1E6EB6005AD49D /* ConfigMetrica.swift in Sources */,
+				80923C731E1D54220098C4DF /* main.swift in Sources */,
+				80C1BA241E1D99B1000D807A /* Metrica.swift in Sources */,
+				8038D1531E1EDA9C00A89D16 /* MetricaError.swift in Sources */,
+				80923C6C1E1D53F80098C4DF /* YandexMetrica.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		80923C6D1E1D53F80098C4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80923C6E1E1D53F80098C4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		80923C701E1D53F80098C4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7LSSWAQSWM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		80923C711E1D53F80098C4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7LSSWAQSWM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80923C631E1D53F80098C4DF /* Build configuration list for PBXProject "yandex-metrica-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80923C6D1E1D53F80098C4DF /* Debug */,
+				80923C6E1E1D53F80098C4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80923C6F1E1D53F80098C4DF /* Build configuration list for PBXNativeTarget "yandex-metrica-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80923C701E1D53F80098C4DF /* Debug */,
+				80923C711E1D53F80098C4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80923C601E1D53F80098C4DF /* Project object */;
+}
