@@ -9,11 +9,11 @@
 import Foundation
 
 //
-// Сущность счетчика
+// Сущность статистики счетчика
 //
 final class Metrica {
     
-    // Номер счетчика
+    // ID/тип статистики. К примеру - реклама или прямые заходы
     public let id: String
     
     // Название
@@ -23,13 +23,13 @@ final class Metrica {
     public let favicon: String
     
     // Визитов
-    public let visits: Int
+    public var visits: Int
     
     // Просмотра страниц
-    public let pageViews: Int
+    public var pageViews: Int
     
     // Пользователи
-    public let users: Int
+    public var users: Int
  
     
     init(id: String, name: String, favicon: String, visits: Int, pageViews: Int, users: Int) {

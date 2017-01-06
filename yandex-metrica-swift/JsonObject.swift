@@ -53,7 +53,7 @@ class JsonObject {
     //
     
     
-    public func has(jsonParam: String) -> Bool {
+    public func has(_ jsonParam: String) -> Bool {
         if self.json[jsonParam] != nil {
             return true
         }
@@ -61,7 +61,7 @@ class JsonObject {
     }
     
     
-    public func getInt(jsonParam: String) -> Int? {
+    public func getInt(_ jsonParam: String) -> Int? {
         guard let result: Int = self.json[jsonParam] as? Int else {
             return nil
         }
@@ -69,7 +69,7 @@ class JsonObject {
     }
     
     
-    public func getString(jsonParam: String) -> String? {
+    public func getString(_ jsonParam: String) -> String? {
         guard let result: String = self.json[jsonParam] as? String else {
             return nil
         }
@@ -77,7 +77,15 @@ class JsonObject {
     }
     
     
-    public func getArray(jsonParam: String) -> [[String: Any]]? {
+    public func getArray(_ jsonParam: String) -> [Any]? {
+        guard let result: [Any] = self.json[jsonParam] as? [Any] else {
+            return nil
+        }
+        return result
+    }
+    
+    
+    public func getArrayKeyValue(_ jsonParam: String) -> [[String: Any]]? {
         guard let result: [[String: Any]] = self.json[jsonParam] as? [[String: Any]] else {
             return nil
         }
@@ -85,7 +93,7 @@ class JsonObject {
     }
     
     
-    public func getAny(jsonParam: String) -> Any? {
+    public func getAny(_ jsonParam: String) -> Any? {
         guard let result: Any = self.json[jsonParam] else {
             return nil
         }

@@ -10,6 +10,7 @@
 		802430321E1E34F9005AD49D /* JsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802430311E1E34F9005AD49D /* JsonObject.swift */; };
 		802430341E1E6EB6005AD49D /* ConfigMetrica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802430331E1E6EB6005AD49D /* ConfigMetrica.swift */; };
 		8038D1531E1EDA9C00A89D16 /* MetricaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8038D1521E1EDA9C00A89D16 /* MetricaError.swift */; };
+		806EB0AC1E1FA6A000448DEE /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EB0AB1E1FA6A000448DEE /* Counter.swift */; };
 		80923C6C1E1D53F80098C4DF /* YandexMetrica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80923C6B1E1D53F80098C4DF /* YandexMetrica.swift */; };
 		80923C731E1D54220098C4DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80923C721E1D54220098C4DF /* main.swift */; };
 		80C1BA241E1D99B1000D807A /* Metrica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1BA231E1D99B1000D807A /* Metrica.swift */; };
@@ -31,6 +32,7 @@
 		802430311E1E34F9005AD49D /* JsonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonObject.swift; sourceTree = "<group>"; };
 		802430331E1E6EB6005AD49D /* ConfigMetrica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigMetrica.swift; sourceTree = "<group>"; };
 		8038D1521E1EDA9C00A89D16 /* MetricaError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricaError.swift; sourceTree = "<group>"; };
+		806EB0AB1E1FA6A000448DEE /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		80923C681E1D53F80098C4DF /* yandex-metrica-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "yandex-metrica-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80923C6B1E1D53F80098C4DF /* YandexMetrica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMetrica.swift; sourceTree = "<group>"; };
 		80923C721E1D54220098C4DF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				80C1BA231E1D99B1000D807A /* Metrica.swift */,
+				806EB0AB1E1FA6A000448DEE /* Counter.swift */,
 			);
 			name = entity;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				80C1BA241E1D99B1000D807A /* Metrica.swift in Sources */,
 				8038D1531E1EDA9C00A89D16 /* MetricaError.swift in Sources */,
 				80923C6C1E1D53F80098C4DF /* YandexMetrica.swift in Sources */,
+				806EB0AC1E1FA6A000448DEE /* Counter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
