@@ -11,15 +11,13 @@ import Foundation
 //
 // Список ошибок и исключений
 //
+
 enum MetricaError: Error {
-    
+
     // Метрика вернула ошибку или нечитабельный ответ
     case InvalidRequest
-    
-    // Невозможное преобразование типов
-    case ErrorCastType
-    
+
     // Нет такого элемента в JSON
     case InvalidValue
-    
+
 }

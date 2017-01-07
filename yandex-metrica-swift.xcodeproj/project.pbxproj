@@ -11,6 +11,7 @@
 		802430341E1E6EB6005AD49D /* ConfigMetrica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802430331E1E6EB6005AD49D /* ConfigMetrica.swift */; };
 		8038D1531E1EDA9C00A89D16 /* MetricaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8038D1521E1EDA9C00A89D16 /* MetricaError.swift */; };
 		806EB0AC1E1FA6A000448DEE /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EB0AB1E1FA6A000448DEE /* Counter.swift */; };
+		80767A7A1E20056600A0A514 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80767A791E20056600A0A514 /* Goal.swift */; };
 		80923C6C1E1D53F80098C4DF /* YandexMetrica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80923C6B1E1D53F80098C4DF /* YandexMetrica.swift */; };
 		80923C731E1D54220098C4DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80923C721E1D54220098C4DF /* main.swift */; };
 		80C1BA241E1D99B1000D807A /* Metrica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1BA231E1D99B1000D807A /* Metrica.swift */; };
@@ -33,6 +34,7 @@
 		802430331E1E6EB6005AD49D /* ConfigMetrica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigMetrica.swift; sourceTree = "<group>"; };
 		8038D1521E1EDA9C00A89D16 /* MetricaError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricaError.swift; sourceTree = "<group>"; };
 		806EB0AB1E1FA6A000448DEE /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		80767A791E20056600A0A514 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		80923C681E1D53F80098C4DF /* yandex-metrica-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "yandex-metrica-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80923C6B1E1D53F80098C4DF /* YandexMetrica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMetrica.swift; sourceTree = "<group>"; };
 		80923C721E1D54220098C4DF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				80C1BA231E1D99B1000D807A /* Metrica.swift */,
 				806EB0AB1E1FA6A000448DEE /* Counter.swift */,
+				80767A791E20056600A0A514 /* Goal.swift */,
 			);
 			name = entity;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80767A7A1E20056600A0A514 /* Goal.swift in Sources */,
 				802430321E1E34F9005AD49D /* JsonObject.swift in Sources */,
 				802430341E1E6EB6005AD49D /* ConfigMetrica.swift in Sources */,
 				80923C731E1D54220098C4DF /* main.swift in Sources */,
@@ -284,7 +288,7 @@
 				80923C6E1E1D53F80098C4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		80923C6F1E1D53F80098C4DF /* Build configuration list for PBXNativeTarget "yandex-metrica-swift" */ = {
 			isa = XCConfigurationList;
@@ -293,7 +297,7 @@
 				80923C711E1D53F80098C4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
