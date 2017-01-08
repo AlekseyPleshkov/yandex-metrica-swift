@@ -126,10 +126,17 @@ class YandexMetrica {
                 break
             }
 
-            if totalsArray.count == 4 {
+            if totalsArray.count == 9 {
                 guard let visits = totalsArray[0] as? Int,
                       let pageViews = totalsArray[1] as? Int,
-                      let users = totalsArray[2] as? Int else {
+                      let users = totalsArray[2] as? Int,
+                      let bounceRate = totalsArray[3] as? Double,
+                      let pageDepth = totalsArray[4] as? Double,
+                      let avgVisitDurationSeconds = totalsArray[5] as? Double,
+                      let percentNewVisitors = totalsArray[6] as? Double,
+                      let newUsers = totalsArray[7] as? Int,
+                      let newUserVisitsPercentage = totalsArray[8] as? Double
+                    else {
                     print("Error, initMetrics: Не найден один из элементов totals")
                     break
                 }
@@ -138,7 +145,13 @@ class YandexMetrica {
                         favicon: "none",
                         visits: visits,
                         pageViews: pageViews,
-                        users: users)
+                        users: users,
+                        bounceRate: bounceRate,
+                        pageDepth: pageDepth,
+                        avgVisitDurationSeconds: avgVisitDurationSeconds,
+                        percentNewVisitors: percentNewVisitors,
+                        newUsers: newUsers,
+                        newUserVisitsPercentage: newUserVisitsPercentage)
                 counter.metrics.append(metrica)
             }
 
@@ -158,7 +171,7 @@ class YandexMetrica {
                         break
                     }
 
-                    if dimensions.count == 2 && metrics.count == 4 {
+                    if dimensions.count == 2 && metrics.count == 9 {
 
                         // Разбито на два массива, получаем каждый для парсинга информации
                         let dimensionsOne = dataObject.getJsonObject(dimensions[0])
@@ -166,17 +179,26 @@ class YandexMetrica {
 
                         // ID и название перехода (реклама, поисковые системы..)
                         guard let dimensionsId = dimensionsOne.getString("id"),
-                              let dimensionsName = String("\(dimensionsOne.getString("name")) " +
-                                      "| \(dimensionsTwo.getString("name"))"),
+                              let dimensionsNameOne = dimensionsOne.getString("name"),
+                              let dimensionsNameTwo = dimensionsTwo.getString("name"),
                               let dimensionsFavicon = dimensionsTwo.getString("favicon") else {
                             print("Error, initMetrics: Не найден один из ключей в dimensions")
                             break
                         }
 
+                        let dimensionsName = "\(dimensionsNameOne) | \(dimensionsNameTwo)"
+
                         // Статистика этого источника
                         guard let visitsSource = metrics[0] as? Int,
                               let pageViewsSource = metrics[1] as? Int,
-                              let usersSource = metrics[2] as? Int else {
+                              let usersSource = metrics[2] as? Int,
+                              let bounceRateSource = metrics[3] as? Double,
+                              let pageDepthSource = metrics[4] as? Double,
+                              let avgVisitDurationSecondsSource = metrics[5] as? Double,
+                              let percentNewVisitorsSource = metrics[6] as? Double,
+                              let newUsersSource = metrics[7] as? Int,
+                              let newUserVisitsPercentageSource = metrics[8] as? Double
+                                else {
                             print("Error, initMetrics: Не найден один из ключей в metrics")
                             break
                         }
@@ -184,6 +206,7 @@ class YandexMetrica {
                         // Проверяем, есть ли такая статистика уже в списке у счетчика
                         // Если есть, то добавляем данные к уже имеющимся
                         if counter.hasMetrica(id: dimensionsId) {
+
                             guard let metricaExists = counter.getMetricaFromId(id: dimensionsId) else {
                                 print("Error, initMetrics: Ошибка извлечения метрики по ID")
                                 break
@@ -191,13 +214,26 @@ class YandexMetrica {
                             metricaExists.visits += visitsSource
                             metricaExists.pageViews += pageViewsSource
                             metricaExists.users += usersSource
+                            metricaExists.bounceRate += bounceRateSource
+                            metricaExists.pageDepth += pageDepthSource
+                            metricaExists.avgVisitDurationSeconds += avgVisitDurationSecondsSource
+                            metricaExists.percentNewVisitors += percentNewVisitorsSource
+                            metricaExists.newUsers += newUsersSource
+                            metricaExists.newUserVisitsPercentage += newUserVisitsPercentageSource
                         } else {
+
                             let newMetrica = Metrica(id: dimensionsId,
                                     name: dimensionsName,
                                     favicon: dimensionsFavicon,
                                     visits: visitsSource,
                                     pageViews: pageViewsSource,
-                                    users: usersSource)
+                                    users: usersSource,
+                                    bounceRate: bounceRateSource,
+                                    pageDepth: pageDepthSource,
+                                    avgVisitDurationSeconds: avgVisitDurationSecondsSource,
+                                    percentNewVisitors: percentNewVisitorsSource,
+                                    newUsers: newUsersSource,
+                                    newUserVisitsPercentage: newUserVisitsPercentageSource)
                             counter.metrics.append(newMetrica)
                         }
                     }

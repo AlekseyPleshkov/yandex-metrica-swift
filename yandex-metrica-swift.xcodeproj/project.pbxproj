@@ -39,6 +39,7 @@
 		80923C6B1E1D53F80098C4DF /* YandexMetrica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMetrica.swift; sourceTree = "<group>"; };
 		80923C721E1D54220098C4DF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		80C1BA231E1D99B1000D807A /* Metrica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metrica.swift; sourceTree = "<group>"; };
+		D9446777DF2C451CA5097D7C /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 			children = (
 				80923C6A1E1D53F80098C4DF /* yandex-metrica-swift */,
 				80923C691E1D53F80098C4DF /* Products */,
+				D9446777DF2C451CA5097D7C /* .travis.yml */,
 			);
 			sourceTree = "<group>";
 		};

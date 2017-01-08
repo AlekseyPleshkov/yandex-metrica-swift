@@ -37,7 +37,7 @@ final class ConfigMetrica {
         // Ссылки для получения данных в формате JSON
         self.linkGetCounters = "https://api-metrika.yandex.ru/management/v1/counters?oauth_token=\(token)";
         self.linkGetSingleCounter = "https://api-metrika.yandex.ru/management/v1/counter/REPLACE_ID?oauth_token=\(token)";
-        self.linkGetStandartStats = "https://api-metrika.yandex.ru/stat/v1/data?preset=sources_summary&metrics=ym:s:visits,ym:s:pageviews,ym:s:users,ym:s:bounceRate&id=REPLACE_ID&date1=\(dateStart)&date2=\(dateEnd)&oauth_token=\(token)";
+        self.linkGetStandartStats = "https://api-metrika.yandex.ru/stat/v1/data?preset=sources_summary&metrics=ym:s:visits,ym:s:pageviews,ym:s:users,ym:s:bounceRate,ym:s:pageDepth,ym:s:avgVisitDurationSeconds,ym:s:percentNewVisitors,ym:s:newUsers,ym:s:newUserVisitsPercentage&id=REPLACE_ID&date1=\(dateStart)&date2=\(dateEnd)&oauth_token=\(token)";
         self.linkGetGoals = "https://api-metrika.yandex.ru/management/v1/counter/REPLACE_ID/goals?oauth_token=\(token)";
         self.linkGetGoalStats = "https://api-metrika.yandex.ru/stat/v1/data?metrics=ym:s:goalREPLACE_GOAL_IDreaches,ym:s:goalREPLACE_GOAL_IDconversionRate&id=REPLACE_ID&date1=\(dateStart)&date2=\(dateEnd)&oauth_token=\(token)";
     }

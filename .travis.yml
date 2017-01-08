@@ -1,0 +1,7 @@
+os:
+  - linux
+  - osx
+language: generic
+osx_image: xcode8
+script:
+  - swift build
